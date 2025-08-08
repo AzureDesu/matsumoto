@@ -1,7 +1,7 @@
 {
   "name": "@azuredesu/matsumoto",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Vue 3 composable to parse, sanitize, and format Markdown with spoiler support.",
   "type": "module",
   "main": "./dist/matsumoto.umd.cjs",
@@ -11,7 +11,7 @@
       "import": "./dist/matsumoto.js",
       "require": "./dist/matsumoto.umd.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./matsumoto.css": "./dist/matsumoto.css"
   },
   "files": [
     "dist"

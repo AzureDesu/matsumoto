@@ -1,2 +1,2 @@
-import './style.css';
+import './matsumoto.css';
 export { Markdown } from './Markdown.js';
