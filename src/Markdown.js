@@ -101,7 +101,7 @@ export function Markdown(initialMarkdown = '', containerRef = ref(null)) {
     // Use data attributes that DOMPurify will preserve
     processedMarkdown = processedMarkdown.replace(
       /~!([^]*?)!~/gm,
-      `<div><span data-spoiler-toggle='show' class='markdown-spoiler before:bg-background before:text-primary text-sm'><div data-spoiler-toggle='hide' class='hide-spoiler bg-accent-50-active leading-none  markdown-close-button'></div><span class='bg-background rounded-sm'>$1</span></span></div>`
+      `<div><span data-spoiler-toggle='show' class='matsumoto-spoiler'><div data-spoiler-toggle='hide' class='matsumoto-spoiler-close'></div><span class='matsumoto-spoiler-content'>$1</span></span></div>`
     );
 
     // Sanitize the final HTML to prevent XSS attacks
