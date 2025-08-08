@@ -1,7 +1,7 @@
 # Matsumoto
 
-[![npm](https://img.shields.io/npm/v/@azuredesu/matsumoto.svg)](https://www.npmjs.com/package/@azuredesu/matsumoto)
-[![license](https://img.shields.io/npm/l/@azuredesu/matsumoto.svg)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@azuredesu/matsumoto.svg?v=1)](https://www.npmjs.com/package/@azuredesu/matsumoto)
+[![license](https://img.shields.io/npm/l/@azuredesu/matsumoto.svg?v=1)](LICENSE)
 
 A talkative little helper for Vue 3, inspired by Matsumoto from *Vivy: Fluorite Eye's Song*.
 
@@ -15,13 +15,13 @@ npm install @azuredesu/matsumoto
 
 ## Styling
 
-`Matsumoto.js` generates HTML with generic, semantic class names like `.matsumoto-spoiler`.
+`Matsumoto` generates HTML with generic, semantic class names like `.matsumoto-spoiler`.
 
 For a great default look that works out of the box, you can import the optional stylesheet in your application's entry point (e.g., `main.js`):
 
 ```js
 // In your main.js or similar entry file
-import '@azuredesu/matsumoto/style.css';
+import '@azuredesu/matsumoto/matsumoto.css';
 ```
 
 Alternatively, you can ignore this file and write your own CSS targeting the `.matsumoto-*` classes to match your application's design system perfectly.
