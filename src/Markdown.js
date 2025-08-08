@@ -145,7 +145,7 @@ export function Markdown(initialMarkdown = '', containerRef = ref(null)) {
     event.stopPropagation();
     const spoilerElement = event.currentTarget.parentElement;
     const spoilerContent = spoilerElement.querySelector('span');
-    spoilerContent.style.display = 'none';
+    // spoilerContent.style.display = 'none';
     spoilerElement.classList.remove('spoiler-visible');
     spoilerElement.classList.add('spoiler-closed');
   };
