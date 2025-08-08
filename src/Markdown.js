@@ -92,7 +92,7 @@ export function Markdown(initialMarkdown = '', containerRef = ref(null)) {
     );
     processedMarkdown = processedMarkdown.replace(
       /img(\d+)\((.+?)\)/g,
-      '<img class="rounded-sm" src="$2" width="$1">'
+      '<img class="matsumoto-image" src="$2" width="$1">'
     );
     processedMarkdown = processedMarkdown.replace(/`(.+?)`/g, '<code>$1</code>');
     processedMarkdown = processedMarkdown.replace(/\n/g, '<br>');
