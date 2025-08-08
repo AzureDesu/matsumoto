@@ -1,5 +1,5 @@
 {
-  "name": "@mariey/matsumoto",
+  "name": "@azuredesu/matsumoto",
   "private": false,
   "version": "1.0.0",
   "description": "A Vue 3 composable to parse, sanitize, and format Markdown with spoiler support.",
