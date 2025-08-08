@@ -1,4 +1,4 @@
-# Matsumoto.js
+# Matsumoto
 
 [![npm](https://img.shields.io/npm/v/@azuredesu/matsumoto.svg)](https://www.npmjs.com/package/@azuredesu/matsumoto)
 [![license](https://img.shields.io/npm/l/@azuredesu/matsumoto.svg)](LICENSE)
