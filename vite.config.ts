@@ -1,14 +1,13 @@
-// vite.config.js
+// vite.config.ts
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.js'),
-      // The UMD-safe name for your library
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'Matsumoto',
-      // The base for the output file names
       fileName: 'matsumoto',
     },
     rollupOptions: {
@@ -20,4 +19,5 @@ export default defineConfig({
       },
     },
   },
+  plugins: [dts()], // <-- ADD THIS PLUGIN
 });
