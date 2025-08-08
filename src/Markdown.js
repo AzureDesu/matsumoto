@@ -46,7 +46,7 @@ export function Markdown(initialMarkdown = '', containerRef = ref(null)) {
     });
 
     // ... (All other regex replacements for bold, italic, center, etc.)
-    processedMarkdown = processedMarkdown.replace(/\n/g, '<br>');
+    
     processedMarkdown = processedMarkdown.replace(/__(.+?)__/g, '<strong>$1</strong>');
     processedMarkdown = processedMarkdown.replace(/_(.+?)_/g, '<em>$1</em>');
     processedMarkdown = processedMarkdown.replace(/~{3}([^]*?)~{3}/gm, '<center>$1</center>');
@@ -55,16 +55,13 @@ export function Markdown(initialMarkdown = '', containerRef = ref(null)) {
       /\[(.+?)\]\((.+?)\)/g,
       '<a href="$2" target="_blank">$1</a>'
     );
-    processedMarkdown = processedMarkdown.replace(
-      /img(\d+)\((.+?)\)/g,
-      '<img class="rounded-sm" src="$2" width="$1">'
-    );
+    
     for (let i = 6; i >= 1; i--) {
       const headerRegex = new RegExp(`^(#{${i}})(.+)$`, 'gm');
       processedMarkdown = processedMarkdown.replace(headerRegex, `<h${i}>$2</h${i}>`);
     }
     processedMarkdown = processedMarkdown.replace(/^>(.+)$/gm, '<blockquote>$1</blockquote>');
-    processedMarkdown = processedMarkdown.replace(/`(.+?)`/g, '<code>$1</code>');
+    
     
 
     /* this section is bugged is makeing ul for every li */
@@ -93,6 +90,12 @@ export function Markdown(initialMarkdown = '', containerRef = ref(null)) {
         return `<ol>${listItems}</ol>`;
       }
     );
+    processedMarkdown = processedMarkdown.replace(
+      /img(\d+)\((.+?)\)/g,
+      '<img class="rounded-sm" src="$2" width="$1">'
+    );
+    processedMarkdown = processedMarkdown.replace(/`(.+?)`/g, '<code>$1</code>');
+    processedMarkdown = processedMarkdown.replace(/\n/g, '<br>');
 
     // Spoiler: ~!spoiler!~
     // Use data attributes that DOMPurify will preserve
