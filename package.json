@@ -1,0 +1,47 @@
+{
+  "name": "@mariey/matsumoto",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A Vue 3 composable to parse, sanitize, and format Markdown with spoiler support.",
+  "type": "module",
+  "main": "./dist/matsumoto.umd.cjs",
+  "module": "./dist/matsumoto.js",
+  "exports": {
+    ".": {
+      "import": "./dist/matsumoto.js",
+      "require": "./dist/matsumoto.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+ 
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.6"
+  },
+  "devDependencies": {
+    "vite": "^7.1.1",
+    "vue": "^3.5.18"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.18"
+  },
+  "keywords": [
+    "vue",
+    "composable",
+    "markdown",
+    "parser",
+    "vivy",
+    "matsumoto"
+  ],
+  "author": "AzureDesu <AzureDesu@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzureDesu/matsumoto.git"
+  }
+}
