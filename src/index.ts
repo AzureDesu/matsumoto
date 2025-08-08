@@ -1,2 +1,3 @@
 import './matsumoto.css';
-export { MatsoMarkdown } from './MatsoMarkdown';
+export * from './composables/MatsoMarkdown';
+// export * from './composables/MatsoHighLight;
