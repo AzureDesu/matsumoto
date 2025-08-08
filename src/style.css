@@ -1,0 +1,59 @@
+/* src/style.css */
+
+/* Default styling for images */
+.matsumoto-image {
+    border-radius: 0.125rem; /* 2px */
+  }
+  
+  /* Base style for a hidden spoiler */
+  .matsumoto-spoiler {
+    background-color: #333;
+    color: #333; /* Hides the text by making it the same color as the background */
+    padding: 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none; /* Prevents text selection when hidden */
+  }
+  
+  /* Style for the spoiler once it's visible/opened */
+  .matsumoto-spoiler.spoiler-visible {
+    background-color: transparent;
+    color: inherit; /* Use the parent's text color */
+    cursor: default;
+  }
+  
+  /* The actual content inside the spoiler */
+  .matsumoto-spoiler-content {
+    display: none; /* Hidden by default */
+  }
+  
+  .matsumoto-spoiler.spoiler-visible .matsumoto-spoiler-content {
+    display: inline; /* Show when the parent is visible */
+  }
+  
+  /* The close 'x' button */
+  .matsumoto-spoiler-close {
+    display: none; /* Hide the close button by default */
+  }
+  
+  /* Show and style the close button only when the spoiler is visible */
+  .matsumoto-spoiler.spoiler-visible .matsumoto-spoiler-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #888;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .matsumoto-spoiler.spoiler-visible .matsumoto-spoiler-close::before {
+    content: '×'; /* The 'x' character */
+  }
