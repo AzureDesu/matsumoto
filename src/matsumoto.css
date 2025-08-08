@@ -24,9 +24,10 @@
   }
   
   /* The actual content inside the spoiler */
-  .matsumoto-spoiler-content {
-    display: none; /* Hidden by default */
-  }
+  /* .matsumoto-spoiler-content {
+    display: none; /* Hidden by default 
+  } 
+*/
   
   .matsumoto-spoiler.spoiler-visible .matsumoto-spoiler-content {
     display: inline; /* Show when the parent is visible */
@@ -55,5 +56,15 @@
   }
   
   .matsumoto-spoiler.spoiler-visible .matsumoto-spoiler-close::before {
-    content: '×'; /* The 'x' character */
+    display: inline-block;
+  width: 14px;
+  height: 14px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z' stroke-width='1' stroke='%23000'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
   }
