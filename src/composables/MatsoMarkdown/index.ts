@@ -140,8 +140,6 @@ export function MatsoMarkdown(
 
     const spoilerContent = spoilerElement.querySelector<HTMLElement>('.matsumoto-spoiler-content');
     if (!spoilerContent) return;
-
-    spoilerContent.style.display = 'none';
     spoilerElement.classList.remove('spoiler-visible');
     spoilerElement.classList.add('spoiler-closed');
   };

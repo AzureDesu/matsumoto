@@ -1,8 +1,8 @@
 # Matsumoto
 
-[![npm](https://img.shields.io/npm/v/@azuredesu/matsumoto.svg)](https://www.npmjs.com/package/@azuredesu/matsumoto)
-[![license](https://img.shields.io/npm/l/@azuredesu/matsumoto.svg)](LICENSE)
-[![typescript](https://img.shields.io/badge/written%20in-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+[![npm](https://img.shields.io/npm/v/@azuredesu/matsumoto.svg?v=2)](https://www.npmjs.com/package/@azuredesu/matsumoto)
+[![license](https://img.shields.io/npm/l/@azuredesu/matsumoto.svg?v=2)](LICENSE)
+[![typescript](https://img.shields.io/badge/written%20in-TypeScript-blue.svg?v=2)](https://www.typescriptlang.org/)
 
 Your talkative little helper for Vue 3. A collection of tree-shakeable, TypeScript-first composables designed to guide your application's complex tasks into simple, elegant solutions.
 
@@ -12,9 +12,8 @@ Inspired by Matsumoto from *Vivy: Fluorite Eye's Song*.
 
 -   **Tree-shakeable**: Only import the functions you need, keeping your bundle size small.
 -   **TypeScript First**: Written entirely in TypeScript for a better developer experience.
--   **Markdown Parser**: Includes the `useMatso` composable for parsing and sanitizing Markdown.
--   **Custom Syntax**: Supports custom syntax like spoilers (`~!secret!~`) out of the box.
 -   **Unstyled by Default**: Provides a separate, optional stylesheet to keep your project lean.
+-   **More composables coming soon—stay tuned as we soon move them to documents!**
 
 ## Installation
 
